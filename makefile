@@ -1,10 +1,10 @@
-CC=gcc
+CC=cc
 CFLAGS=-o crud
 SOURCES=main.c user.c
 HEADERS=user.h
 
 all:
-	$(CC) $(SOURCES) $(CFLAGS)
+	@$(CC) $(SOURCES) $(CFLAGS)
 
 clean:
-	rm -f crud users.txt
+	@rm -f crud users.txt
